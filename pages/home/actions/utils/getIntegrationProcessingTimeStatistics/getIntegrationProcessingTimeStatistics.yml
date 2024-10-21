@@ -1,0 +1,40 @@
+id: '17295034867270.4469751176937724'
+kind: workflow
+name: getIntegrationProcessingTimeStatistics
+nameConfigured: true
+steps:
+  - id: '17295034892200.04363780771804637'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17295041347230.8368873907681309'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getIntegrationProcessingTimeStatistics.name}}"?
+  showSuccessToast: false
+  successToast: >-
+    Action "{{actions.getIntegrationProcessingTimeStatistics.name}}"
+    successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getIntegrationProcessingTimeStatistics.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

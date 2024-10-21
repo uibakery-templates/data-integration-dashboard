@@ -1,0 +1,65 @@
+id: '17291797791640.7620080931710564'
+definitionId: gridView
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 85
+      w: 24
+      h: 36
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 420
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17291784643780.3108083884199262'
+      x: 0
+      y: 0
+      w: 20
+      h: 76
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 420
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  columns: '6'
+  data: |-
+    [
+      { title: 'Total Data Processed', value: Math.random() * 100, unit: 'GB' },
+      { title: 'Data Integration Success Rate', value: Math.random() * 100, unit: '%' },
+      { title: 'Error Rate', value: Math.random() * 100, unit: '%' },
+      { title: 'Average Processing Time', value: Math.random() * 100, unit: 'ms' },
+      { title: 'Integration Frequency', value: Math.random() * 100, unit: 'jobs/day' },
+      { title: 'Pending Jobs', value: Math.random() * 100, unit: 'jobs' },
+    ];
+  limit: '6'
+  name: gridView
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  isDynamicColumns: false
+  minWidth:
+    customValue: 7
+    customUnit: px
+  heightMode: auto
+  margin:
+    value: false
+    dataValue: 4px
+    withData: false
+parentSlotId: '17291797791640.6154790954210521'
+index: 0
+actions: {}
+slots:
+  - id: '17291797791640.16775998633023037'
+    name: content
+    children:
+      - gridViewItem/gridViewItem.yml

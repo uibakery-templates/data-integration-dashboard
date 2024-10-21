@@ -1,0 +1,16 @@
+id: '17295119153600.2697804647867783'
+kind: store_item
+name: filteredIntegrations
+nameConfigured: true
+steps: []
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17295041582890.3815512402750527'
+storeItem:
+  value: '[]'
+  valueType: array
+  initialValue: '[]'
+  version: 1
+selected: true
+configured: true

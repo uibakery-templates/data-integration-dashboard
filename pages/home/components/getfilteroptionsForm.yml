@@ -1,0 +1,267 @@
+id: '17291792017490.5165105590260493'
+definitionId: form
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 18
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 620
+      w: 24
+      h: 18
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dynamicFields:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  entity: '{{actions.getFilterOptions.data}}'
+  name: getfilteroptionsForm
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  columns: '4'
+  showSubmitBtn:
+    value: false
+    dataValue: 'true'
+    withData: false
+  submitOnEnter:
+    value: false
+    dataValue: 'true'
+    withData: false
+  heightMode: fixed
+  showCustomButton:
+    value: false
+    dataValue: 'false'
+    withData: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: default
+actions:
+  changeEvent:
+    - action: '17295111225910.8629460822620594'
+      paramCode: ''
+      index: 0
+  init: []
+  submitEvent: []
+  formClick: []
+  customButtonClick: []
+slots:
+  - id: '17291792017490.906380554308706'
+    name: structure
+    children:
+      - id: '17295070681020.2859268136758293'
+        definitionId: atomicMultiselect
+        parentSlotId: '17291792017490.906380554308706'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicMultiselect
+          prop: sources
+          primaryKey: false
+          options:
+            value:
+              - value: SalesDB
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.9523543633414631'
+              - value: CustomerAPI
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.4693887212593606'
+              - value: InventoryDB
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.1628676216738647'
+              - value: FinanceDB
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.9559775167776026'
+              - value: UserAPI
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.02383039662266384'
+              - value: OrderDB
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.3100133826924236'
+              - value: TransactionAPI
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.5147363890452106'
+              - value: FileUpload
+                color: warning-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.37786265282778575'
+              - value: LogisticsDB
+                color: danger-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.7098983930296736'
+              - value: ProductAPI
+                color: info-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.032913549535940057'
+            dataValue: '{{value}}'
+            withData: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          editModeValue: '{{null}}'
+        index: 2
+        slots: []
+      - id: '17295070681020.2524316793331567'
+        definitionId: atomicMultiselect
+        parentSlotId: '17291792017490.906380554308706'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicMultiselect2
+          prop: destinations
+          primaryKey: false
+          options:
+            value:
+              - value: AnalyticsDW
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.422431847770246'
+              - value: MarketingDataLake
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.4028693745865555'
+              - value: OperationsDW
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.5101100846961395'
+              - value: ReportingDW
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.1835156433779941'
+              - value: UserDataLake
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.7385062060249836'
+              - value: EcommerceDW
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.32641133688531365'
+              - value: FinancialDataLake
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.9906662791567471'
+              - value: InventoryDW
+                color: warning-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.5755741881648426'
+              - value: SupplyChainDW
+                color: danger-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.15394599497776662'
+              - value: ProductDataLake
+                color: info-dark
+                __UIBAKERY__SYSTEM_ID__: '17295070681020.0016577518058715768'
+            dataValue: '{{value}}'
+            withData: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          editModeValue: '{{}}'
+        index: 4
+        slots: []
+      - id: '17295070681020.9547490722501928'
+        definitionId: atomicMultiselect
+        parentSlotId: '17291792017490.906380554308706'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicMultiselect3
+          prop: statuses
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          options:
+            value:
+              - value: Success
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17295070831190.9524294063603367'
+              - value: Failed
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17295070831190.2095166386585392'
+              - value: In Progress
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17295070831190.2422797644810597'
+            dataValue: |-
+              [
+                {
+                  value: 'Success',
+                  color: 'primary'
+                },
+                {
+                  value: 'Failed',
+                  color: 'success'
+                },
+                {
+                  value: 'In Progress',
+                  color: 'warning'
+                }
+              ]
+            withData: false
+        index: 3
+        slots: []
+      - id: '17295070681030.3607102523727135'
+        definitionId: atomicDate
+        parentSlotId: '17291792017490.906380554308706'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDate
+          prop: startDate
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          maxDate: '{{ui.getfilteroptionsForm.value.endDate}}'
+        index: 0
+        slots: []
+      - id: '17295070681030.12212332687116034'
+        definitionId: atomicDate
+        parentSlotId: '17291792017490.906380554308706'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDate2
+          prop: endDate
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          minDate: '{{ui.getfilteroptionsForm.value.startDate}}'
+        index: 1
+        slots: []

@@ -1,0 +1,4 @@
+- getIntegrationStatusStatistics
+- getIntegrationProcessingTimeStatistics
+- getFilterOptions
+- updateCharts

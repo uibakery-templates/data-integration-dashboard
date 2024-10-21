@@ -1,0 +1,94 @@
+id: '17291797791640.71964089346503'
+definitionId: metric
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 23
+      h: 31
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17291784225790.9447855480287211'
+      x: 0
+      y: 40
+      w: 22
+      h: 28
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  data: '{{item}}'
+  name: metric4
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: '{{item.title}}'
+  operation: show_last
+  groupType: not_group
+  showLoading:
+    withData: true
+    dataValue: 'false'
+    value: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+parentSlotId: '17291797791640.6504774259342654'
+index: 0
+actions: {}
+slots:
+  - id: '17291797791640.05552076202038014'
+    name: metricField
+    children:
+      - id: '17295007521690.7112711638225753'
+        definitionId: atomicNumber
+        parentSlotId: '17291797791640.05552076202038014'
+        styles: {}
+        properties:
+          name: atomicNumber2
+          prop: value
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '17291797791640.8870846135954651'
+    name: additionalField
+    children:
+      - id: '17295007521680.6950625130713735'
+        definitionId: atomicString
+        parentSlotId: '17291797791640.8870846135954651'
+        styles: {}
+        properties:
+          name: atomicString8
+          prop: unit
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '17291797791640.33575778784159427'
+    name: groupByField
+    children: []

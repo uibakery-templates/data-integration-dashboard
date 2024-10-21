@@ -1,0 +1,37 @@
+id: '17295065052770.97679979278896'
+kind: workflow
+name: getFilterOptions
+nameConfigured: true
+steps:
+  - id: '17295065094420.9615289723240588'
+    type: customAsyncCode
+    name: filterOptions
+    params:
+      - type: asyncCode
+        value: ./filterOptions.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17295041347230.8368873907681309'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.getFilterOptions.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getFilterOptions.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getFilterOptions.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

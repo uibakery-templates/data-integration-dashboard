@@ -1,0 +1,30 @@
+id: '17291797791640.6205573803447828'
+definitionId: cardNew
+styles:
+  xl:
+    gridItem:
+      x: 0
+      w: 24
+      h: 46
+properties:
+  name: card2
+  showHeader: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  heightMode: auto
+parentSlotId: '17291797791640.5025793834259138'
+index: 0
+actions: {}
+slots:
+  - id: '17291797791640.44435044944202384'
+    name: header
+    children:
+      - heading2.yml
+  - id: '17291797791640.19787593190190855'
+    name: footer
+    children: []
+  - id: '17291797791640.2719787035774346'
+    name: views
+    children:
+      - view_2/view_2.yml

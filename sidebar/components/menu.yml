@@ -1,0 +1,111 @@
+id: '17291792329650.9167072375348249'
+definitionId: menu
+parentSlotId: '17291790978010.07706953737167366'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 13
+      w: 24
+      h: 113
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 12
+      w: 24
+      h: 40
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  autoSyncItems: false
+  name: menu
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  items: |-
+    [
+      {
+        title: 'Data Integration Dashboard',
+        selected: true,
+        icon: 'pie-chart-outline',
+      },
+      {
+        title: 'Data Source Management',
+        icon: 'folder-outline',
+      },
+      {
+        title: 'API Connectivity',
+        icon: 'link-outline',
+        children: [
+          {
+            title: 'API Keys',
+            icon: 'lock-outline',
+          },
+          {
+            title: 'Connection Status',
+            icon: 'wifi-outline',
+          },
+        ],
+      },
+      {
+        title: 'ETL Process Monitoring',
+        icon: 'sync-outline',
+      },
+      {
+        title: 'Data Pipelines',
+        icon: 'shuffle-outline',
+      },
+      {
+        title: 'Error Logs and Reports',
+        icon: 'alert-circle-outline',
+      },
+      {
+        title: 'Data Sync Overview',
+        icon: 'cloud-upload-outline',
+      },
+      {
+        title: 'Integration Statistics',
+        icon: 'bar-chart-outline',
+        children: [
+          {
+            title: 'Daily Stats',
+            icon: 'calendar-outline',
+          },
+          {
+            title: 'Performance Reports',
+            icon: 'file-text-outline',
+          },
+        ],
+      },
+      {
+        title: 'Performance Metrics',
+        icon: 'trending-up-outline',
+      },
+    ]
+  heightMode: fixed
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'none',
+        border: 'none'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+actions: {}
+slots: []
