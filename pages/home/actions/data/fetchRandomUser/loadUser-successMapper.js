@@ -1,1 +1,0 @@
-return {{data[Math.floor(Math.random() * data.length)]}}

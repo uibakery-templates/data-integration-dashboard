@@ -33,5 +33,5 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: '{{actions.fetchRandomUser.data.name}}'
+  title: John Doe
 slots: []
